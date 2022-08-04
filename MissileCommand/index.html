@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <script src="Bullet.js"></script>
+    <script src="Rocket.js"></script>
+    <script src="Shelter.js"></script>
+    <script src="Turret.js"></script>
+    <script src="Player.js"></script>
+    <script src="NEATJS/connection.js"></script>
+    <script src="NEATJS/genome.js"></script>
+    <script src="NEATJS/node.js"></script>
+    <script src="Population.js"></script>
+  
+
+    <div id="leftDiv" class="left">
+      <div id="canvascontainer"></div>
+    </div>
+  
+    <div style="display: inline-block" >
+      <div class="right">
+        <h2>Generation Info:</h2>
+  
+        Best Fitness: <span id="bestFitness"></span>
+        </br>
+        Current Generation: <span id="generationN"></span>
+        </br>
+  
+        <h2>Run Options:</h2>
+        Show all players: <input id="allCheckbox" type="checkbox" checked>
+        </br>
+        Show the best player: <input id="bestCheckbox" type="checkbox">
+        </br>
+        Run only the best player: <input id="runBestCheckbox" type="checkbox">
+        </br>
+        Speed: <input id="speedSlider" type="range" min="0" max="20" value="1"> <span id="speed">1</span>
+      </div>
+  
+      <div class="right current">
+        <div id="svgContainer"><h2>Population Display:</h2></div>
+      </div>
+    </div>
+
+</body></html>
